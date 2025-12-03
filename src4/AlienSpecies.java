@@ -1,11 +1,13 @@
 /**
- * Represents a simple alien species as described in the lab.
- * For now, it's only a data model
+ * Represents an alien species.
+ * This class simply stores the data loaded from the input.json file.
+ * Classification will later fill the "universe" field.
  */
 public class AlienSpecies {
+
     public int id;
     public String name;
-    public String universe;      // will be classified later
+    public String universe;     // Filled after classification
     public String dangerLevel;
     public String[] features;
     public int power;
@@ -16,7 +18,7 @@ public class AlienSpecies {
         this.dangerLevel = dangerLevel;
         this.features = features;
         this.power = power;
-        this.universe = "Unassigned";  // default until we classify
+        this.universe = "Unassigned"; // default until classification
     }
 
     @Override
