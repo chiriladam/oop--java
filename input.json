@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Zorblax",
+    "dangerLevel": "medium",
+    "features": ["tentacles", "acid saliva"],
+    "power": 45
+  },
+  {
+    "id": 2,
+    "name": "Mindwyrm",
+    "dangerLevel": "high",
+    "features": ["telepathy"],
+    "power": 88
+  }
+]
