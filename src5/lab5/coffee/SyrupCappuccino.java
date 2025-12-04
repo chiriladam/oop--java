@@ -13,4 +13,18 @@ public class SyrupCappuccino extends Cappuccino {
         super(intensity, mlOfMilk);
         this.syrup = syrup;
     }
+
+    @Override
+    public void printDetails() {
+        super.printDetails();
+        System.out.println("Syrup: " + syrup);
+    }
+
+    public SyrupCappuccino makeSyrupCappuccino() {
+        System.out.println("Making Syrup Cappuccino:");
+        System.out.println(" - Brewing espresso");
+        System.out.println(" - Steaming " + mlOfMilk + " ml milk");
+        System.out.println(" - Adding syrup: " + syrup);
+        return this;
+    }
 }
